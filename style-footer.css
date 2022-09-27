@@ -3,7 +3,7 @@ footer {
     left: 0;
     right: 0;
     width: 100%;
-    background-color: #1f2421;
+    background-color: #344e41;
 }
 footer .footerwrap {
     width: 1200px;
@@ -55,5 +55,7 @@ footer .footerwrap ul li a {
     font-size: 12px;
     line-height: 200%;
     text-align: center;
+    padding-top: 10px;
     margin: 10px 0;
+    border-top: 1px solid #ccc;
 }
