@@ -1,6 +1,7 @@
 .wrap {
     width: 100%;
     margin: 0;
+    padding-bottom: 15px;
     background-color: #dce1de;
 }
 nav {
