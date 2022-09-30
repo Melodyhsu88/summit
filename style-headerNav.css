@@ -4,7 +4,7 @@ nav {
     background: linear-gradient(#ffffffcc, #c3d2d900 );
     top: 0;
     margin: 0 auto;
-    position: fixed;
+    position: absolute;
     z-index: 10;
 }
 .navbar {
