@@ -665,6 +665,10 @@ ul.dot li:hover {
     font-weight: 500;
     border-bottom: 1px solid black;
 }
+.month a {
+    color: #000000;
+    text-decoration: none;
+}
 .nav {
     font-weight: bolder;
     display:flex;
