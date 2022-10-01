@@ -167,7 +167,7 @@
     padding: 10px;
     display: flex;
     flex-wrap: wrap;
-    height: 175px;
+    line-height: 150%;
     box-sizing: border-box;
 }
 .txtContent {
@@ -330,7 +330,7 @@ ul.path {
     width: 1200px;
     display: flex;
     justify-content: flex-start;
-    padding: 10px 0;
+    padding: 15px 0;
     margin: auto;
 }
 ul.path li a {
@@ -493,4 +493,488 @@ ul.pagination li a.active {
     background-color: #a7c957;
     border-radius: 5px;
     color: white;
+}
+.info-container {
+    width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+}
+.product-info-title {
+    width: 1200px;
+    margin: auto;
+    margin-top: 20px;
+}
+.product-info-title h2 {
+    font-size: 24px;
+    color: #344e41;
+    text-align: left;
+    font-weight: bold;
+    text-shadow: 2px 2px 3px rgba(0, 0, 0, .2);
+    line-height: 200%;
+}
+.product-info-title h2 span {
+    margin-left: 15px;
+}
+.product-info-title div.remark {
+    font-weight: bold;
+    font-size: 14px;
+    line-height: 200%;
+}
+.product-info-title .price {
+    color: #bc4749;
+    font-size: 24px;
+    font-weight: 800;
+    line-height: 200%;
+    text-shadow: 1px 1px 3px rgba(0, 0, 0, .2);
+}
+.productPic-banner {
+    width: 500px;
+    height: 330px;
+    overflow: hidden;
+    position: relative;
+}
+.product-info-pic ul{
+    width: 500px;
+    height: 330px;
+}
+.dot {
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 5px;
+    left: 0;
+    margin: auto;
+}
+ul.dot li{
+    width: 8px;
+    height: 8px;
+    background-color: #ffffff99;
+    border-radius: 50%;
+    margin: 0 8px;
+    
+}
+ul.dot li:hover {
+    background-color: #FFFFFF;
+    width: 9px;
+    height: 9px;
+    transition: all .3s;
+}
+.product-info-pic img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 5px;
+}
+.info-content {
+    width: 100%;
+}
+.info-content h3 {
+    font-size: 20px;
+    font-weight: 800;
+    margin: 10px 0;
+}
+.info-detail {
+    width: 90%;
+    text-align: justify;
+    line-height: 150%;
+}
+.info-detail h4 {
+    font-weight: bold;
+}
+.equipList, .itinerary {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+}
+.equip-btn {
+    width: 90%;
+    margin-bottom: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.equip-btn a {
+    margin-right: 50px;
+    background-color: #000000;
+    border: none;
+    border-radius: .5rem;
+    box-sizing: border-box;
+    color: white;
+    font-size: .875rem;
+    font-weight: 600;
+    line-height: 100%;
+    padding: 12px;
+    text-align: center;
+    text-decoration: none;
+    text-decoration-thickness: auto;
+    box-shadow: 0px 2px 3px 0px rgba(0, 0, 0, 0.5);
+    cursor: pointer;
+    user-select: none;
+    -webkit-user-select: none;
+    touch-action: manipulation;
+}
+.equip-btn a:hover {
+  background-color: #bc4749;
+  color: white;
+}
+.itinerary ul.info-detail {
+    padding: 5px;
+    width: 45%;
+    margin: 0.8%;
+    box-sizing: border-box;
+}
+.equipList ul.info-detail {
+    width: 30.333333%;
+    margin: 1.5%;
+    box-sizing: border-box;
+}
+.equipList li::before {
+    content: '-';
+}
+.datepicker {
+    width: 60%;
+    padding: 10px;
+    border-radius: 2px;
+    margin: 0 20px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.calendar {
+    border: 3px solid black;
+    margin-bottom: 20px;
+    flex-grow: 1;
+}
+.year {
+    font-weight: 600;
+    margin-right: 10px;
+}
+.month {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 18px;
+    padding: 10px;
+    font-weight: 500;
+    border-bottom: 1px solid black;
+}
+.nav {
+    font-weight: bolder;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    text-decoration:none;
+    width:30px;
+    height:30px;
+    border-radius:40px;
+    transition-duration:.2s;
+    position:relative;
+}
+.nav:hover {
+    background-color: #bc4749;
+}
+.days {
+    display: grid;
+    grid-template-columns: repeat(7, 1fr);
+    justify-content: center;
+    align-content: center;
+    margin-top: 10px;
+}
+.days span {
+    width: 30px;
+    justify-self: center;
+    align-self: center;
+    text-align: center;
+}
+.dates {
+    display: grid;
+    grid-template-columns: repeat(7, 1fr);
+}
+.dates button {
+    cursor: pointer;
+    border: none;
+    background: transparent;
+    justify-self: center;
+    align-self: center;
+    width: 30px;
+    height: 30px;
+    border-radius: 50px;
+    margin: 3px 1px;
+    transition-duration: .2s;
+}
+.dates button:hover {
+    background: #bc4749;
+}
+.dates button:focus {
+    background-color: #344e41;
+    color: #fff;
+    font-weight: 600;
+}
+.dates button.today {
+    box-shadow:inset 0px 0px 0px 2px #386641
+}
+.dates button:first-child {
+    grid-column: 6;
+}
+.restSpace {
+    font-weight: bold;
+    letter-spacing: 5px;
+    color: black;
+    padding: 10px 0;
+    border-top: 1px solid black;
+}
+.restSpace span {
+    color: #bc4749;
+}
+.number {
+    margin-bottom: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.number input {
+    text-align: center;
+    padding: 5px 0;
+    width: 100px;
+    border: 2px solid #344e41;
+    border-radius: 5px;
+}
+.buy {
+    background-color: #344e41;
+    border: 1px solid #344e41;
+    border-radius: 8px;
+    box-shadow: rgba(213, 217, 217, .5) 1px 2px 5px 2px;
+    box-sizing: border-box;
+    color: white;
+    cursor: pointer;
+    font-size: 14px;
+    line-height: 35px;
+    padding: 0 10px;
+    text-align: center;
+    text-decoration: none;
+    user-select: none;
+    -webkit-user-select: none;
+    touch-action: manipulation;
+    vertical-align: middle;
+    width: 200px;
+    align-self: center;
+}
+.buy:hover {
+    background-color: white;
+    color: #344e41;
+    font-weight: bold;
+}
+.tracklist {
+    align-self: flex-start;
+}
+button.tracklist {
+    border: none;
+    box-sizing: border-box;
+    background: transparent;
+    cursor: pointer;
+    font-size: 14px;
+    line-height: 35px;
+    padding: 0 8px;
+    text-align: center;
+    text-decoration: none;
+    user-select: none;
+    -webkit-user-select: none;
+    touch-action: manipulation;
+    vertical-align: middle;
+    width: 150px;
+}
+.tracklist img {
+    vertical-align: middle;
+    margin-right: 8px;
+}
+button.tracklist:hover {
+    color: #bc4749;
+}
+.trackShare {
+    display: flex;
+    justify-content: space-between;
+}
+.shareTo {
+    display: flex;
+    margin: 0 5px;
+}
+.shareTo p {
+    margin: auto;
+    line-height: 100%;
+}
+.shareTo ul {
+    display: flex;
+}
+.shareTo li {
+    width: 20px;
+    height: 20px;
+    margin: 5px;
+}
+.shareTo img {
+    width: 100%;
+    height: 100%;
+    vertical-align: baseline;
+}
+.product.product.otherProduct {
+    margin-top: 50px;
+}
+.product.otherProduct .productPic {
+    width: 180px;
+    height: 180px;
+}
+.product.otherProduct h2 {
+    font-size: 20px;
+}
+.product.otherProduct h3, .product.otherProduct .price {
+    font-size: 14px;
+    line-height: 150%;
+}
+.product.otherProduct .remark.txtContent {
+    text-align: justify;
+    font-size: 12px;
+    line-height: 100%;
+    bottom: 0%;
+}
+section.course {
+    width: 100%;
+    margin: 0 auto;
+    padding: 10px 0;
+}
+.courseTitle {
+    width: 1200px;
+    margin: 0 auto;
+    text-align: center;
+}
+.courseTitle h2 {
+    font-size: 24px;
+    font-weight: bold;
+    color: black;
+    line-height: 200%;
+}
+.courseTitle p {
+    font-weight: bold;
+    line-height: 150%;
+}
+.courseContent {
+    width: 1200px;
+    margin: 30px auto;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+}
+.courseContent-item {
+    margin: 0 10px;
+    box-shadow: 0px 0px 3px 0px black;
+    border-radius: 8px;
+    background-color: #a7c957;
+}
+.courseContent .pic {
+    width: 100%;
+    height: 300px;
+    background-color: #FFFFFF;
+    border-radius: 8px;
+    position: relative;
+}
+.read-btn {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    margin: auto;
+    width: 100%;
+    height: 100%;
+    opacity: 0;
+    border-radius: 8px;
+    background-color: rgba(0, 0, 0, .3);
+}
+.read-btn .btn {
+    color: white;
+    text-decoration: none;
+    border: 1px solid white;
+    padding: 6px;
+    border-radius: 8px;
+}
+.courseContent-item:hover .read-btn{
+    opacity: 1;
+    transition: opacity 1s;
+}
+.courseContent img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: left top;
+    border-radius: 8px;
+}
+.courseContent-item .txt {
+    padding: 5px;
+    box-sizing: border-box;
+    
+}
+.courseContent-item .txt h3 {
+    font-size: 18px;
+    line-height: 150%;
+    font-weight: 600;
+    text-align: center;
+}
+.courseContent-item .txt p {
+    line-height: 125%;
+}
+.blog.container {
+    margin: auto;
+}
+.blog.container h2 {
+    font-size: 24px;
+    font-weight: bold;
+    color: black;
+    line-height: 200%;
+    text-align: center;
+    margin-bottom: 20px;
+}
+.blogpic.col-2 {
+    height: 150px;
+}
+.blogpic.col-2 img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: top center;
+    border-radius: 5px;
+}
+.col-12.blog-item {
+    max-width: 1200px;
+    margin: auto;
+    margin-bottom: 10px;
+    padding: 10px;
+    border-bottom: 1px solid #cccccc99;
+}
+.blogContent .txt {
+    line-height: 150%;
+    width: 80%;   
+    padding: 10px 15px;
+    text-align: justify;
+}
+.blog-title a{
+    text-decoration: none;
+    font-size: 18px;
+    font-weight: 700;
+    color: #000000;
+}
+.blogContent .txt .tag span{
+    display: inline-block;
+    background-color: #bc4749;
+    line-height: 150%;
+    font-size: 12px;
+    color: #FFFFFF;
+    padding: 3px 5px;
+    border-radius: 5px;
 }
