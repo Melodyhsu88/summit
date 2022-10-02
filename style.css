@@ -1039,7 +1039,6 @@ section.course {
 .merchsale .pic {
     text-align: left;
     vertical-align: middle;
-    margin: 5px 10px;
     position: relative;
     box-shadow: 0 1px 3px rgba(0, 0, 0, .8);
 }
