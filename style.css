@@ -7,7 +7,6 @@
 .bannerPic {
     width: 100%;
     height: 720px;
-    
 }
 .banner {
     width: 100%;
@@ -23,9 +22,9 @@
 }
 .bannerText {
     letter-spacing: 3px;
-    text-shadow: 0px 0px 8px rgba(0, 0, 0, .8);
+    text-shadow: 1.5px 1.5px 3px rgba(0, 0, 0, 1);
     writing-mode: vertical-lr;
-    line-height: 200%;
+    line-height: 3;
     color: white;
     height: 300px;  
     display: flex;
@@ -33,7 +32,7 @@
     justify-content: center;
     align-items: center;
     position: absolute;
-    top: 20%;
+    top: 0;
     right: 0;
     bottom: 0;
     left: 0;
@@ -48,7 +47,7 @@
     margin: 0 auto;
     padding: 20px 0px;
 }
-.businessValue h2 {
+/* .businessValue h2 {
     font-size: 24px;
     line-height: 48px;
     letter-spacing: 2px;
@@ -56,13 +55,13 @@
     color: #bc4749;
     margin: 20px 0px 20px 20px;
     text-shadow: 2px 2px 5px rgba(0, 0, 0, .2);
-}
-.businessValue h2 p:last-child {
+} */
+/* .businessValue h2 p:last-child {
     text-indent: 48px;
-}
+} */
 .picContainer {
     margin: 20px 0;
-    box-shadow: 1px 1px 9px 3px #ccc;
+    box-shadow: 1px 1px 9px 1px #00000060;
 }
 .picContainer .pic {
     display: grid;
@@ -108,7 +107,7 @@
     font-size: 30px;
     font-weight: bold;
     color: #bc4749;
-    text-shadow: 2px 2px 5px rgba(0, 0, 0, .2);
+    /* text-shadow: 2px 2px 5px rgba(0, 0, 0, .2); */
     text-align: center;
     margin: 20px;
     display: inline-block;
@@ -118,12 +117,12 @@
 .productContainer {
     display: flex;
     justify-content: center;
-    overflow: hidden;
+    /* overflow: hidden; */
     margin: 20px auto;
 }
 .productItem {
     margin: 5px 10px;
-    box-shadow: 0px 0 9px 0 #ccc;
+    box-shadow: 1px 1px 9px 1px #00000060;
 }
 .productPic {
     width: 250px;
@@ -205,7 +204,7 @@
     width: 47.5%;
     height: 375px;
     margin: 20px 0; 
-    box-shadow: 1px 1px 8px 3px #ccc;
+    box-shadow: 1px 1px 9px 1px #00000060;
 }
 .itemPic img{
     width: 100%;
@@ -215,28 +214,36 @@
 }
 .mainService-item .txt {
     width: 20%;
+    height: 375px;
     margin: 20px 0;
     background-color: #344e41;
-    padding: 10px;
+    padding: 20px;
     box-sizing: border-box;
     box-shadow: 1px 1px 8px 2px #ccc;
 }
 .itemTxt {
-    padding: 16px;
     box-sizing: border-box;
-    line-height: 200%;
     color: white;
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    justify-content: space-evenly;
+    
 }
 .itemTxt h3 {
     font-size: 22px;
     color: white;
     font-weight: bold;
+    text-align: center;
+}
+.mainService-item .itemTxt p {
     line-height: 200%;
+    font-size: 14px;
 }
 .itemTxt .btn {
     appearance: none;
-    background-color: #000000;
-    border: 1px solid #1A1A1A;
+    background: transparent;
+    border: 1px solid white;
     border-radius: 10px;
     box-sizing: border-box;
     color: #FFFFFF;
@@ -258,10 +265,6 @@
     touch-action: manipulation;
     width: 100%;
     will-change: transform;
-}
-
-.itemTxt .btn:disabled {
-    pointer-events: none;
 }
 .itemTxt .btn:hover {
     border-color: #bc4749;
@@ -366,7 +369,7 @@ ul.path li a {
     line-height: 1.25;
     margin: 0 15px;
     min-height: 3rem;
-    padding: 5px 10px;
+    padding: 5px 18px;
     text-decoration: none;
     transition: all 250ms;
     user-select: none;
@@ -498,7 +501,7 @@ ul.pagination li a.active {
     width: 1200px;
     margin: 0 auto;
     display: flex;
-    justify-content: space-between;
+    justify-content: space-evenly;
     align-items: flex-start;
 }
 .product-info-title {
@@ -508,10 +511,9 @@ ul.pagination li a.active {
 }
 .product-info-title h2 {
     font-size: 24px;
-    color: #344e41;
+    color: #bc4749;
     text-align: left;
-    font-weight: bold;
-    text-shadow: 2px 2px 3px rgba(0, 0, 0, .2);
+    font-weight: bolder;
     line-height: 200%;
 }
 .product-info-title h2 span {
@@ -523,11 +525,10 @@ ul.pagination li a.active {
     line-height: 200%;
 }
 .product-info-title .price {
-    color: #bc4749;
+    color: black;
     font-size: 24px;
     font-weight: 800;
     line-height: 200%;
-    text-shadow: 1px 1px 3px rgba(0, 0, 0, .2);
 }
 .productPic-banner {
     width: 500px;
@@ -856,7 +857,7 @@ section.course {
 .courseTitle h2 {
     font-size: 24px;
     font-weight: bold;
-    color: black;
+    color: #bc4749;
     line-height: 200%;
 }
 .courseTitle p {
@@ -915,9 +916,10 @@ section.course {
     object-fit: cover;
     object-position: left top;
     border-radius: 8px;
+    vertical-align: middle;
 }
 .courseContent-item .txt {
-    padding: 5px;
+    padding: 5px 10px;
     box-sizing: border-box;
     
 }
@@ -936,7 +938,7 @@ section.course {
 .blog.container h2 {
     font-size: 24px;
     font-weight: bold;
-    color: black;
+    color:#bc4749;
     line-height: 200%;
     text-align: center;
     margin-bottom: 20px;
@@ -975,7 +977,7 @@ section.course {
 }
 .blogContent .txt .tag span{
     display: inline-block;
-    background-color: #bc4749;
+    background-color: #386641;
     line-height: 150%;
     font-size: 12px;
     color: #FFFFFF;
@@ -1015,20 +1017,18 @@ section.course {
 }
 .earlybirdSale h2 {
     font-size: 30px;
-    font-weight: bold;
-    color: black;
+    font-weight: bolder;
+    color: #bc4749;
     line-height: 200%;
-    text-shadow: 0px 0px 4px rgba(0, 0, 0, .5);
 }
 .earlybirdSale p {
     color: white;
     display: inline-block;
     font-size: 16px;
-    background-color: #bc4749;
+    background-color: #386641;
     padding: 5px 10px;
     border-radius: 2px;
     margin-bottom: 20px;
-    box-shadow: 0 0px 3px rgba(0, 0, 0, .5);
 }
 .merchsale {
     width: 1200px;
@@ -1059,6 +1059,7 @@ section.course {
 }
 .merchsale .pic h3 span {
     font-size: 16px;
+    font-weight: lighter;
 }
 .merchsale .pic:nth-child(1) {
     grid-column: 1/3;
@@ -1071,7 +1072,7 @@ section.course {
 }
 .wrap.searchtrip {
     width: 100%;
-    background-color: black;
+    background-color: #386641;
 }
 .searchOwnTrip {
     width: 1200px;
@@ -1150,11 +1151,13 @@ select.select option {
     display: grid;
     grid-template-columns: 400px 400px 400px;
     grid-template-rows: 185px 185px 185px;
+    gap: 7px;
 }
 .photoCollection-pic {
     width: 100%;
     overflow: hidden;
-    border-radius: 3px;
+    /* border-radius: 5px; */
+    cursor: pointer;
 }
 .photoCollection img {
     width: 100%;
@@ -1195,10 +1198,9 @@ select.select option {
     margin: auto;
     text-align: center;
     line-height: 175%;
-    color: #000000;
+    color: #bc4749;
     font-size: 36px;
     font-weight: bold;
-    text-shadow: 0px 0px 5px rgba(0, 0, 0, .3);
 }
 .mainequip {
     width: 1200px;
@@ -1222,7 +1224,7 @@ select.select option {
     border-radius: 5px;
 }
 .mainequip-item:nth-child(2) .pic img {
-    border-radius: 60% / 50%;
+    object-position: 100% 100%;
 }
 .mainequip-item {
     text-align: center;
@@ -1274,7 +1276,7 @@ select.select option {
 }
 .sleepSystem-container .txt h3 {
     color: white;
-    text-shadow: 0px 0px 4px rgba(0, 0, 0, .5);
+    text-shadow: 1px 1px 0px rgba(0, 0, 0, .5);
     font-size: 48px;
     font-weight: bold;
     line-height: 150%;
@@ -1303,7 +1305,7 @@ select.select option {
     border: 2px solid white;
     color: #bc4749;
     font-size: 21px;
-    transition: all .3s;
+    transition: all .03s;
     box-shadow: none;
 }
 .sleepItem {
@@ -1350,9 +1352,8 @@ a.btn.leaf:hover {
     font-size: 30px;
     margin: 10px auto;
     line-height: 200%;
-    color: #000000;
+    color: #bc4749;
     font-weight: bold;
-    text-shadow: 0px 0px 5px rgba(0, 0, 0, .3);
 }
 .popequip-container {
     width: 1200px;
@@ -1411,11 +1412,11 @@ a.btn.leaf:hover {
     padding: 20px 0;
     font-size: 24px;
     font-weight: 600;
-    color: #000000cc;
     border-bottom: 1px solid #344e4199;
     background-color: #f2e8cf;
 }
 .slogan p {
+    color: #000000bf;
     width: 48%;
     padding: 20px 0;
     margin: auto;
@@ -1439,6 +1440,9 @@ a.btn.leaf:hover {
     justify-content: center;
     align-content: center;
     gap: 0px 50px;
+}
+.coIntro p {
+    line-height: 250%;
 }
 .coIntro-pic {
     width: 100%;
@@ -1471,14 +1475,17 @@ a.btn.leaf:hover {
 .coIntro-txt {
     text-align: center;
     align-self: center;
+    color: #000000bf;
 }
 .coIntro-txt h3 {
+    color: #000000bf;
     font-size: 26px;
     font-weight: bold;
     line-height: 200%;
     align-self: flex-end;
 }
 .coIntro p {
+    color: #000000bf;
     font-size: 18px;
     text-align: justify;
     line-height: 175%;
@@ -1522,10 +1529,9 @@ section.coValue {
     font-weight: 500;
 }
 .coValue-item:hover {
-    border: 1px solid #bc4749;
-    color: #bc4749;
-    background-color: #ffffff50;
-    backdrop-filter: blur(5px);
+    border: 1px solid white;
+    background-color: #bc47494d;
+    backdrop-filter: blur(2px);
 }
 .coValue-banner {
     width: 100%;
